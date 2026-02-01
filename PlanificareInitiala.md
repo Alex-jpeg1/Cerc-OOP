@@ -17,8 +17,8 @@ Vor fi prezentate cateva scurte notiuni de baza OOP (diferente dintre clase si s
 
 ### Cerc 2:
 
-Cercul 2 va fi dedicat pentru o prezentare a principiului de baza numit ** Encapsulation **. Aici se vor prezenta ideile de baza insotite de cateva exemple simple si o "provocare" pentru studentii participanti. 
+Cercul 2 va fi dedicat pentru o prezentare a principiului de baza numit **Encapsulation**. Aici se vor prezenta ideile de baza insotite de cateva exemple simple si o "provocare" pentru studentii participanti. 
 
 ### Cerc 3:
 
-Cercul 3 va fi dedicat pentru prezentarea unui principiu de baza si anume ** Inheritance **. Vor fi prezentate scurte exemple de mosteniri simple si cum arata in memorie un obiect derivat dintr-o clasa de baza. Cercul va fi insotit de asemenea si de o parte practica in care studentii isi pot adresa intrebarile si nelamurii neclaritatile avand de lucru la un exemplu.
+Cercul 3 va fi dedicat pentru prezentarea unui principiu de baza si anume **Inheritance**. Vor fi prezentate scurte exemple de mosteniri simple si cum arata in memorie un obiect derivat dintr-o clasa de baza. Cercul va fi insotit de asemenea si de o parte practica in care studentii isi pot adresa intrebarile si nelamurii neclaritatile avand de lucru la un exemplu.
