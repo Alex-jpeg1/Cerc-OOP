@@ -8,7 +8,7 @@
 ---
 
 ##  Targetul acestui cerc
-Predarea accesibilă a conceptelor OOP în afara curriculumului clasic, cu accent pe **standardele moderne C++ (C++11 up to C++23)**. Ne concentrăm nu doar pe "cum să scriem cod", ci pe "cum să proiectăm aplicații robuste".
+Predarea accesibilă a conceptelor OOP în afara curriculumului clasic, cu accent pe **standardele moderne C++ (C++11 up to C++17)**. Ne concentrăm nu doar pe "cum să scriem cod", ci pe "cum să proiectăm aplicații robuste".
 
 ### Detalii Organizatorice
 * **Locație:** Se va anunța pe Google Classroom.
