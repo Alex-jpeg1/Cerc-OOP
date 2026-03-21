@@ -2,7 +2,8 @@
 
 # Cerc de Programare Orientată pe Obiecte (C++)
 ### "De la Sintaxă la Arhitectură"
-
+### Luni ora 18 - 20 
+### Sala ACB, Facultatea de Automatica, Calculatoare si Electronica Craiova  
 </div>
 
 ---
