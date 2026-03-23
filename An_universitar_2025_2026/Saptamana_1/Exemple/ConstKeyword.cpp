@@ -1,5 +1,23 @@
 #include <cstddef>
+#include <ios>
 #include <iostream>
+#include <chrono>
+
+#define Macro 200
+
+constexpr int fibo(int val)
+{
+    if(val <= 1) return val;
+
+    return fibo(val - 1) + fibo(val - 2);
+}
+
+int fibo_nonconstexpr(int val)
+{
+    if(val <= 1) return val;
+
+    return fibo_nonconstexpr(val - 1) + fibo_nonconstexpr( val - 2);
+}
 
 class ConstUsage
 {
@@ -35,7 +53,7 @@ class ConstUsage
         char& operator[](std::size_t poz)
         {
             std::cout << "Apel pe operator[] non const\n";
-            return const_cast<char &>(static_cast<const ConstUsage>(*this)[poz]);
+            return const_cast<char &>(static_cast<const ConstUsage& >(*this)[poz]);
         }
         const char& operator[](std::size_t poz) const
         {
@@ -46,7 +64,7 @@ class ConstUsage
 
         void afiseazaDate()
         {
-            static_cast<const ConstUsage>(*this).afiseazaDate();
+            static_cast<const ConstUsage*>(this)->afiseazaDate();
         }
         void afiseazaDate() const
         {
@@ -72,4 +90,25 @@ int main()
         ConstObject.afiseazaDate();
         NonConstObject.afiseazaDate();
     }
+    ConstExprExemplu:
+    {
+        auto start = std::chrono::high_resolution_clock::now();
+
+        constexpr int val = fibo(25);
+
+        auto finishConstexpr = std::chrono::high_resolution_clock::now();
+
+        fibo_nonconstexpr(25);
+
+        auto finishTotal = std::chrono::high_resolution_clock::now();
+
+        double TimeConstexpr = (finishConstexpr - start).count();
+
+        double TimeNonConstexpr = (finishTotal - finishConstexpr).count();
+
+        std::cout << TimeConstexpr << '\n';
+        std::cout << TimeNonConstexpr <<  '\n';
+    }
+
+    const int p = Macro/2;
 }

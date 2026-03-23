@@ -21,6 +21,18 @@ struct ExempluStruct
         }
 };
 
+class ClasaMostenita: ExempluClasa
+{
+
+};
+
+class StructMostenit: ExempluStruct
+{
+
+};
+
+
+
 int main()
 {
     ExempluClasa exempluObiect1;
@@ -35,4 +47,10 @@ int main()
     //Se poate observa ca ambele permit sa creezi functii care sa modifice obiectul
     exempluObiect1.DoWork();
     exempluObiect2.DoWork();
+
+    ClasaMostenita clasaMostenitaExemplu;
+    //clasaMostenitaExemplu.DoWork();
+
+    StructMostenit structMostenitExemplu;
+    //structMostenitExemplu.DoWork();
 }
