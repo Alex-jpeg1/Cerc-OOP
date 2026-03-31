@@ -12,7 +12,7 @@ class ExempluThis
     }
     ExempluThis()
     {
-        ExempluThis(100);
+        *this = ExempluThis(100);
     }
     bool ComparaVarsta(int varsta)
     {
