@@ -35,3 +35,8 @@ Predarea accesibilă a conceptelor OOP în afara curriculumului clasic, cu accen
 * **Inheritance:** Cum extindem funcționalitatea fără a duplica codul.
 * **Memory View:** Vizualizarea unui obiect derivat în memorie (Base vs Derived part).
 * **Workshop:** Sesiune practică de Q&A și refactorizarea unui exemplu clasic de moștenire.
+
+#### **Cerc 4: Abstractizarea**
+* **Abstractization:** Ce este o metoda abstracta si cum cream una.
+* **Interfaces:** Conceptul de interfata.
+* **Wokshop:** Crearea unei arhitecturi de clase care sa acopere toate conceptele prezentate.
