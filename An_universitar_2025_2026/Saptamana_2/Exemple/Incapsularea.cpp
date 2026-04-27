@@ -1,3 +1,6 @@
+#include <utility>
+#include <iostream>
+
 class DoesWork
 {
     public:
@@ -42,4 +45,17 @@ int main()
     int* a = new int(1);
 
     delete a;
+
+    //lvalue
+    //rvalues
+    
+    int b = 10;
+    const int &c = 10;
+
+    const int& d = 100;
+
+    b = std::move(d);
+
+    std::cout<<d<<'\n';
+    std::cout<<b;
 }

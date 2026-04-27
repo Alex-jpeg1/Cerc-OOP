@@ -1,6 +1,7 @@
 #include<iostream>
 #include<cstdint>
 #include <sys/types.h>
+#include <vector>
 template<typename t>
 struct wrapper{};
 //wrapper pentru a evita ambigous calls pe operatorul << template

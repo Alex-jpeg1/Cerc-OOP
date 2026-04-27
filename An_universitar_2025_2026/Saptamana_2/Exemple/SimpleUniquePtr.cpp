@@ -1,3 +1,5 @@
+#include <utility>
+
 class UniquePtrCustom
 {
     public:
@@ -15,8 +17,12 @@ class UniquePtrCustom
         other.data = nullptr;
     }
 
-    UniquePtrCustom& operator=(UniquePtrCustom&& other)
+    UniquePtrCustom& operator=(UniquePtrCustom&& other) //&&
     {
+        if(this->data!=nullptr)
+        {
+            delete this->data;
+        }
         this->data = other.data;
         other.data = nullptr;
         return *this;
@@ -36,4 +42,10 @@ int main()
 {
     int* a = new int[100];
     delete[] a;
+
+    UniquePtrCustom b(5);
+    UniquePtrCustom c(10);
+
+    b = std::move(c);
+    b.operator=(std::move(c));
 }
